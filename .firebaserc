@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "functions-test-48"
+    "prod": "functions-test-48",
+    "dev": "function-test-48x"
   }
 }

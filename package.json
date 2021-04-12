@@ -1,7 +1,7 @@
 {
   "scripts": {
-    "deploy": "firebase use functions-test-48 && firebase deploy --only functions",
-    "deploydevelop": "firebase use function-test-48x  && firebase deploy --only functions"
+    "deploy": "firebase deploy --only functions --project=prod",
+    "deploydevelop": "firebase deploy --only functions --project=dev"
   },
   "devDependencies": {
     "firebase-tools": "^9.9.0"
