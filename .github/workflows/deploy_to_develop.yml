@@ -9,8 +9,6 @@ jobs:
     name: Build&Deploy
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Repo
-        uses: actions/checkout@develop
       - name: Install Dependencies
         run: npm install
       - name: Install Functions Dependencies
