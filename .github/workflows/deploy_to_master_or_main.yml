@@ -1,4 +1,4 @@
-name: Build and Deploy to Master
+name: Build and Deploy to Master or main
 on:
   push:
     branches:
