@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "deploy": "firebase use function-test-48 && firebase deploy --only functions",
+    "deploy": "firebase use functions-test-48 && firebase deploy --only functions",
     "deploydevelop": "firebase use function-test-48x  && firebase deploy --only functions"
   },
   "devDependencies": {
