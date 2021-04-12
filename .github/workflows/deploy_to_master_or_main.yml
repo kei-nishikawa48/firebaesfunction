@@ -21,4 +21,4 @@ jobs:
       - name: Install Functions Dependencies
         run: cd functions && npm install
       - name: Deploy to Firebase
-        run: yarn deploy --token=${{ secrets.FIREBASE_TOKEN }}
+        run: yarn deploy --token=${{ secrets.FIREBASE_TOKEN_PROD }}
