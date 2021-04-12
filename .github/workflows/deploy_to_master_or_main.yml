@@ -11,8 +11,8 @@ jobs:
     steps:
       - name: Checkout Repo
         uses: actions/checkout@master
-      - name: Checkout Master
-        run: git checkout master
+      - name: USE Development
+        run: firebase use function-test-48x
       - name: Install Dependencies
         run: npm install
       - name: Install Functions Dependencies

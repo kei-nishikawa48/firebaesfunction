@@ -15,8 +15,6 @@ jobs:
     steps:
       - name: Checkout Repo
         uses: actions/checkout@master
-      - name: Checkout Develop
-        run: git checkout develop
       - name: Install Dependencies
         run: npm install
       - name: Install Functions Dependencies
