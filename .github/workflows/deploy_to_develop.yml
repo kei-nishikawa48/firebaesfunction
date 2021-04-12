@@ -1,4 +1,4 @@
-name: Build and Deploy to Development
+name: Build and Deploy to Master
 on:
   push:
     branches:
@@ -11,13 +11,14 @@ jobs:
     steps:
       - name: Checkout Repo
         uses: actions/checkout@master
+      - name: setup Node
+        uses: actions/setup-node@v1
+        with: 
+          node-version: 10.x
+          registry-url: 'https://registry.npmjs.org'
       - name: Install Dependencies
         run: npm install
       - name: Install Functions Dependencies
         run: cd functions && npm install
       - name: Deploy to Firebase
-        uses: w9jds/firebase-action@master
-        with:
-          args: deploy
-        env:
-          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
+        run: yarn deploydevelop --token=${{ secrets.FIREBASE_TOKEN }}
