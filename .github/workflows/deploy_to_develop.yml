@@ -2,7 +2,11 @@ name: Build and Deploy to Development
 on:
   push:
     branches:
+<<<<<<< HEAD
       - develop
+=======
+      - master
+>>>>>>> c4f95a713d604a10147c1a252ca5fa96cced1e56
 
 jobs:
   build_and_deploy:
@@ -22,4 +26,4 @@ jobs:
         with:
           args: deploy
         env:
-          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN_DEVELOP }}
+          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}

@@ -1,4 +1,4 @@
-name: Build and Deploy to Development
+name: Build and Deploy to Master
 on:
   push:
     branches:
@@ -11,8 +11,8 @@ jobs:
     steps:
       - name: Checkout Repo
         uses: actions/checkout@master
-      - name: Checkout Develop
-        run: git checkout develop
+      - name: Checkout Master
+        run: git checkout master
       - name: Install Dependencies
         run: npm install
       - name: Install Functions Dependencies
