@@ -12,6 +12,7 @@ jobs:
       - name: Install Dependencies
         run: npm install
       - name: Install Functions Dependencies
+        run: ls -la
         run: cd functions && npm install
       - name: Deploy to Firebase
         uses: w9jds/firebase-action@master
