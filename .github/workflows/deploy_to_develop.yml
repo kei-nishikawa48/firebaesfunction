@@ -26,7 +26,7 @@ jobs:
         run: |
           cd functions
           npm run build
-          firebase login
+          firebase login --interactive
           firebase projects:list
           firebase use develop
           yarn deploydevelop --token=${{ secrets.FIREBASE_TOKEN_DEV }}
