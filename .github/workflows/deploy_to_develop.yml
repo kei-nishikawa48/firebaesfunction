@@ -26,8 +26,8 @@ jobs:
         run: |
           cd functions
           npm run build
-          firebase projects:list --tonken=$FIREBASE_TOKEN
-          firebase use develop --token=$FIREBASE_TOKEN
+          firebase projects:list 
+          firebase use develop 
           yarn deploydevelop --token=$FIREBASE_TOKEN
         env: 
           FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN_DEV }}
