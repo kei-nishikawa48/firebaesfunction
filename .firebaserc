@@ -1,6 +1,12 @@
 {
   "projects": {
     "prod": "functions-test-48",
-    "dev": "function-test-48x"
+    "develop": "function-test-48x"
+  },
+   "function-test-48x": {
+      "functions": {
+        "devlop": [
+          "function-test-stg"
+      ]
   }
 }

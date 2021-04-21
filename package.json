@@ -1,7 +1,7 @@
 {
   "scripts": {
     "deploy": "firebase deploy --only functions --project=prod",
-    "deploydevelop": "firebase deploy --only functions --project=dev"
+    "deploydevelop": "firebase deploy --only functions --project=develop"
   },
   "devDependencies": {
     "firebase-tools": "^9.9.0"
